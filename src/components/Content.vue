@@ -102,20 +102,10 @@
                 lazy
               >
                 <el-table-column label="序号" width="200px" prop="count">
-                  
-                  <!-- <template>
-                    <span>{{ probability }}</span>
-                  </template> -->
                 </el-table-column>
                 <el-table-column label="目标类别" width="275px" prop="predictedLabel">
-                  <!-- <template>
-                    <span>{{ probability }}</span>
-                  </template> -->
                 </el-table-column>
                 <el-table-column label="置信度" width="275px" prop="probability">
-                  <!-- <template>
-                    <span>{{ probability }}</span>
-                  </template> -->
                 </el-table-column>
               </el-table>
             </el-tab-pane>
@@ -231,23 +221,8 @@ export default {
           this.execTime = response.data.predictionExecutionTime / 1000;
           this.percentage = 100;
           clearInterval(timer);
-          // this.url_1 = response.data.image_url;
-          // this.srcList.push(this.url_1);
-          // this.url_2 = response.data.draw_url;
-          // this.srcList1.push(this.url_2);
           this.fullscreenLoading = false;
           this.loading = false;
-
-          // this.feat_list = Object.keys(response.data.image_info);
-
-          // for (var i = 0; i < this.feat_list.length; i++) {
-          //   response.data.image_info[this.feat_list[i]][2] = this.feat_list[i];
-          //   this.feature_list.push(response.data.image_info[this.feat_list[i]]);
-          // }
-
-          // this.feature_list.push(response.data.image_info);
-          // this.feature_list_1 = this.feature_list[0];
-          
           this.result_list.push({
             probability : this.probability,
             predictedLabel : this.predictedLabel,
