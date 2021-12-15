@@ -1,6 +1,6 @@
 # 前端安装并启动
 
-git clone
+git clone https://github.com/Rephy/front-end.git
 
 cd front-end
 
